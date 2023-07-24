@@ -7,7 +7,7 @@ EmotionTrainer is an AI-powered project aimed at training your emotion recogniti
 ## About the Developer
 👨‍💼 I am a PhD in Computer Vision, Machine Learning, and Robotics. I serve as the Head of the Biomechanics and Biomaterials Laboratory at the Department of Applied Mechanics and Engineering Graphics, SPbGETU "LETI" (Saint Petersburg State Electrotechnical University "LETI"). 
 
-![University Logo](/assets/logo-leti)
+![University Logo](/assets/logo-leti.png)
 
 ## Features
 🌟 Train your emotion recognition skills with real-world videos  
