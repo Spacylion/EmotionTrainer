@@ -1,0 +1,13 @@
+asgiref==3.7.2
+distlib==0.3.6
+Django==4.2.3
+djangorestframework==3.14.0
+filelock==3.12.2
+numpy==1.25.1
+opencv-python==4.8.0.74
+Pillow==10.0.0
+platformdirs==3.8.1
+pytz==2023.3
+sqlparse==0.4.4
+tzdata==2023.3
+virtualenv==20.23.1
