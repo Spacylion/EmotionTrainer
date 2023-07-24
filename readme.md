@@ -1,14 +1,14 @@
 # EmotionTrainer 🎭
 
-![EmotionTrainer Logo](https://github.com/Spacylion/EmotionTrainer/assets/logo.png)
+![EmotionTrainer Logo](assets/logo.png)
 
 EmotionTrainer is an AI-powered project aimed at training your emotion recognition skills! 🚀 Using the OpenCV AI technique, it processes prerecorded videos and extracts emotion frames 📹🖼️. The trainer then challenges you with quizzes to test your ability to recognize emotions 😄😢😠. 
 
 ## About the Developer
 👨‍💼 I am a PhD in Computer Vision, Machine Learning, and Robotics. I serve as the Head of the Biomechanics and Biomaterials Laboratory at the Department of Applied Mechanics and Engineering Graphics, SPbGETU "LETI" (Saint Petersburg State Electrotechnical University "LETI"). 
 
-![НОЦ Logo](https://github.com/Spacylion/EmotionTrainer/assets/logo.png)
-![University Logo](https://github.com/Spacylion/EmotionTrainer/assets/logo-leti)
+![НОЦ Logo](/assets/logo.png)
+![University Logo](/assets/logo-leti)
 
 ## Features
 🌟 Train your emotion recognition skills with real-world videos  
