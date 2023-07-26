@@ -263,8 +263,7 @@ def create_application():
     info_text_label.pack(pady=5)
 
     middle_section = tk.Frame(root, bg="#ffffff", bd=10, relief="solid")
-    middle_section.place(relx=0.35, rely=0.1, relwidth=0.3, relheight=0.8)
-
+    middle_section.place(relx=0.35, rely=0.15, relwidth=0.3, relheight=0.6)
     video_canvas = tk.Canvas(middle_section, bg="#000000")
     video_canvas.pack(fill=tk.BOTH, expand=True)
 
