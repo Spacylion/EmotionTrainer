@@ -4,6 +4,7 @@ import time
 from tkinter import messagebox
 from PIL import ImageTk, Image
 import cv2
+import os
 
 emotions = {
     "Радость": "assets/happy.mp4",
@@ -34,7 +35,13 @@ difficulty_map = {
     "Очень медленно": 0.25
 }
 
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
 
+    return os.path.join(base_path, relative_path)
 def select_difficulty():
     global difficulty_radio, start_button
 
@@ -230,7 +237,7 @@ def create_application():
     root.configure(bg="#ffffff")
 
     # Set background image
-    bg_image = Image.open("assets/bg.png")
+    bg_image = Image.open(resource_path("bg.png"))
     bg_image = bg_image.resize(
         (root.winfo_screenwidth(), root.winfo_screenheight()), Image.NEAREST)
     bg_photo = ImageTk.PhotoImage(bg_image)
@@ -251,7 +258,7 @@ def create_application():
                 "вам будет предложено определить эмоцию по видео, выбрав одну из предложенных эмоций " \
                 "кнопками. После выбора эмоции, нажмите кнопку 'Следующий вопрос', чтобы продолжить.\n" \
                 "\n" \
-                "Тренажер подготовлен при поддержке НОЦ ИЭСБТТС при СПбГЭТУ «ЛЭТИ»." \
+                "Тренажер подготовлен при поддержке НОЦ ИЭСТТС при СПбГЭТУ «ЛЭТИ»." \
                 "Является частью программу обучения кадровому профайлингу, в котором" \
                 "подробно рассказывается принципы выявления микроэкспрессий лица." \
                 "Является прототипом, образец для демонастрации уникального продукта." \
@@ -263,8 +270,7 @@ def create_application():
     info_text_label.pack(pady=5)
 
     middle_section = tk.Frame(root, bg="#ffffff", bd=10, relief="solid")
-    middle_section.place(relx=0.35, rely=0.1, relwidth=0.3, relheight=0.8)
-
+    middle_section.place(relx=0.35, rely=0.15, relwidth=0.3, relheight=0.6)
     video_canvas = tk.Canvas(middle_section, bg="#000000")
     video_canvas.pack(fill=tk.BOTH, expand=True)
 
